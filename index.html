@@ -46,6 +46,24 @@ section{padding:96px 0}.sectionHead{display:grid;grid-template-columns:.75fr 1.2
   .project>div:last-child{max-width:none}
   .labGrid{grid-template-columns:1fr}
 }
+
+/* V6 section-to-section alignment */
+@media (min-width:901px){
+  .prototypeGrid{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:64px;align-items:center}
+  .prototypePhoto{width:100%;max-width:500px;justify-self:start}
+  .prototypePhoto img{aspect-ratio:16/11;object-fit:cover;object-position:center 52%}
+  .prototypeCopy{padding:10px 0;max-width:640px}
+  .prototypeCopy h2{font-size:34px;line-height:1.12;letter-spacing:-.03em;margin:10px 0 18px;color:var(--navy)}
+  .prototypeCopy p{font-size:15px;line-height:1.85;max-width:620px}
+}
+@media (max-width:900px){
+  .prototypeGrid{grid-template-columns:1fr;gap:28px}
+  .prototypePhoto{max-width:none}
+  .prototypePhoto img{aspect-ratio:16/10;object-fit:cover}
+  .prototypeCopy{padding:0}
+  .prototypeCopy h2{font-size:32px;line-height:1.15}
+}
+
 </style>
 </head>
 <body>
